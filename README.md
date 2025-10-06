@@ -29,7 +29,7 @@ This project showcases my journey as a Software Engineer, featuring my best work
 ## 🌐 Live Demo
 
 Check out the live site here:  
-👉 [https://bilal-ashraf-portfolio-5om7.vercel.app/](https://bilal-ashraf-portfolio-5om7.vercel.app/)
+👉 [https://bilal-ashraf.netlify.app/](https://bilal-ashraf.netlify.app/)
 
 ---
 
