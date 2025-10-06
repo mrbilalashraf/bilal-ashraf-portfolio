@@ -1,6 +1,30 @@
+import { useState } from "react"
 import { Mail, Github, Linkedin, Twitter } from "lucide-react"
 
 export default function ContactSection() {
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+
+    // Send the form data to Formspree
+    const formData = new FormData(form)
+    const response = await fetch("https://formspree.io/f/mnngzllw", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    })
+
+    if (response.ok) {
+      form.reset()
+      setIsSubmitted(true)
+      setTimeout(() => setIsSubmitted(false), 4000) // Hide message after 4s
+    } else {
+      alert("Something went wrong. Please try again later.")
+    }
+  }
+
   return (
     <section
       id="contact"
@@ -15,8 +39,7 @@ export default function ContactSection() {
 
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/mnngzllw"
-          method="POST"
+          onSubmit={handleSubmit}
           className="bg-gray-50 border border-gray-200 rounded-2xl shadow-md p-8 text-left space-y-6"
         >
           <div>
@@ -61,6 +84,13 @@ export default function ContactSection() {
               Send Message
             </button>
           </div>
+
+          {/* Success Message */}
+          {isSubmitted && (
+            <p className="text-center text-green-600 font-medium mt-4">
+              ✅ Message sent successfully!
+            </p>
+          )}
         </form>
 
         {/* Social Links */}
