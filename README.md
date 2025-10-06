@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# 🚀 Muhammad Bilal Ashraf — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio!  
+This project showcases my journey as a Software Engineer, featuring my best work, skills, and a bit about who I am. Built with **React**, **TypeScript**, **Vite**, and **TailwindCSS** for a blazing-fast, modern web experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- Responsive, accessible, and clean UI
+- Animated sections and smooth navigation
+- Project highlights with live demos and code links
+- Contact form (powered by Formspree)
+- Social links and more!
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> **Tip:** After deploying or running locally, take a screenshot of your app and place it in the `public/` or `src/assets/` folder.  
+> Then, update the image path below!
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Home Page | About Section || Projects Section || Contact Section |
+|-----------|---------------||------------------||-----------------|
+| ![Home Screenshot](src/assets/bilal-portfolio-1.png) | ![About Screenshot](src/assets/bilal-portfolio-2.png) | | ![Projects Screenshot](src/assets/bilal-portfolio-3.png) | | ![Contact Screenshot](src/assets/bilal-portfolio-4.png) |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🌐 Live Demo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Check out the live site here:  
+👉 [https://your-vercel-app-url.vercel.app/](https://your-vercel-app-url.vercel.app/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Getting Started
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Run locally:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+
+---
+
+## 📦 Tech Stack
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+## 🤝 Connect
+
+- [GitHub](https://github.com/mrbilalashraf)
+- [LinkedIn](https://linkedin.com/in/bilalashrafme)
+- [Twitter](https://twitter.com/BilalAshrafme)
+
+---
+
+## 📝 License
+
+MIT License
+
+---
+
+> Crafted with ❤️ by Muhammad Bilal Ashraf
