@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import HeroSection from "./sections/HeroSection"
 import './App.css'
 import AboutSection from './sections/AboutSection'
@@ -8,8 +7,6 @@ import ContactSection from './sections/ContactSection'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="font-sans">
       <Navbar />
